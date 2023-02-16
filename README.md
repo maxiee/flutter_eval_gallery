@@ -1,16 +1,16 @@
 # flutter_eval_gallery
 
-A new Flutter project.
+A gallery demo for dart_eval and flutter_eval libraries.
 
-## Getting Started
+# Architecture
 
-This project is a starting point for a Flutter application.
+This project consist of 2 projects:
 
-A few resources to get you started if this is your first Flutter project:
+- root:
+  - A flutter APP contains dart_eval runtime, run bytecode from asset.
+  - Support the bridges for bytecode
+- template:
+  - A flutter App for dynamic codepush
+  - It will be compiled to bytecode, and loaded by root project at runtime.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+There is a Windows BAT script for auto compiling template project into bytecode.

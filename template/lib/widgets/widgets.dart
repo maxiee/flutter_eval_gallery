@@ -7,6 +7,11 @@ class Header extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Text(title, style: TextStyle());
+    return Text(title,
+        style: const TextStyle(
+            inherit: true,
+            fontSize: 24,
+            color: Colors.purple,
+            fontWeight: FontWeight.w600));
   }
 }

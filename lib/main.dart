@@ -5,7 +5,8 @@ import 'package:flutter_eval/flutter_eval.dart';
 void main() {
   runApp(MaterialApp(routes: {
     'home': (context) => const Renderer('home'),
-    'sub': (context) => const Renderer('sub')
+    'sub': (context) => const Renderer('sub'),
+    'stateful': (context) => const Renderer('stateful')
   }, initialRoute: 'home'));
 }
 

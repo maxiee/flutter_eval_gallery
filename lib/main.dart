@@ -6,7 +6,9 @@ void main() {
   runApp(MaterialApp(routes: {
     'home': (context) => const Renderer('home'),
     'sub': (context) => const Renderer('sub'),
-    'stateful': (context) => const Renderer('stateful')
+    'stateful': (context) => const Renderer('stateful'),
+    'stateless': (context) => const Renderer('stateless'),
+    'changenotifier': (context) => const Renderer('changenotifier'),
   }, initialRoute: 'home'));
 }
 
